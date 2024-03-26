@@ -53,7 +53,7 @@ def process_json(file_path):
 text, xpaths, highlighted_xpaths, highlighted_segmented_text, tagged_sequence = process_json(args.json_file+".json")
 
 # Determine the CSV file name based on the JSON file name
-csv_file_path = "updated_" + args.json_file + '.csv'
+csv_file_path = args.json_file + '.csv'
 
 # Open the file in write mode and write the data
 with open(csv_file_path, mode='w', newline='', encoding='utf-8') as file:
